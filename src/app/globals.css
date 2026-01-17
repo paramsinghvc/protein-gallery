@@ -21,6 +21,9 @@ body {
 body {
   background: rgb(var(--bg));
   color: rgb(var(--fg));
+	font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial;
+  /* letter-spacing: -0.01em; */
 }
 
 /* nicer selection */
