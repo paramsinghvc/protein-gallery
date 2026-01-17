@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import clsx from 'clsx';
 import type { Project } from '@/types/project';
+import Markdown from '@/src/components/Markdown';
 
 export function ProjectCard({
   project,
@@ -47,9 +48,13 @@ export function ProjectCard({
             {project.title ?? project.id}
           </h3>
 
-          <p className="mt-2 line-clamp-2 text-sm text-slate-600">
-            {subtitle ?? project.description ?? ''}
-          </p>
+          <Markdown
+            className="mt-2 line-clamp-2 text-sm text-slate-600"
+            markdown={(subtitle ?? project.description ?? '').replace(
+              /^##\s+Summary\s*\n+/,
+              ''
+            )}
+          />
 
           <div className="mt-3 flex flex-wrap gap-2">
             {project.tags.slice(0, 3).map((t) => (
