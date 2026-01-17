@@ -1,0 +1,1132 @@
+[
+	{
+		"id": "biosensor-benzylfentanyl-2025",
+		"category": "Biosensor",
+		"partner": "University of Colorado Boulder",
+		"imageUrl": "images/nitazene-biosensor-2025.png",
+		"publishedDate": "2025-05-17",
+		"tags": [
+			"drug discovery",
+			"biosensor"
+		],
+		"target": {
+			"name": "benzylfentanyl",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "HAB1",
+				"pdb": "3UJO"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "160 pM",
+			"Success rate": "74%",
+			"RMSD": "1.5-2.3 Å"
+		},
+		"title": "Computational Design of Dynamic Biosensors - Benzylfentanyl",
+		"description": "## Summary\n\nDesign campaign for biosensors detecting benzylfentanyl with nanomolar\nsensitivity using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to engineer biosensors for\ndetecting benzylfentanyl opioids based on the plant abscisic acid receptor PYR1.\nThe campaign employed computational design and optimization to develop sensors\nwith low nanomolar sensitivity for detecting benzylfentanyl in complex\nbiological samples.",
+		"links": [
+			{
+				"label": "RCSB: 3UJO",
+				"href": "https://www.rcsb.org/structure/3UJO"
+			}
+		]
+	},
+	{
+		"id": "biosensor-butonitazene-2025",
+		"category": "Biosensor",
+		"partner": "University of Colorado Boulder",
+		"imageUrl": "images/nitazene-biosensor-2025.png",
+		"publishedDate": "2025-05-17",
+		"tags": [
+			"drug discovery",
+			"biosensor"
+		],
+		"target": {
+			"name": "butonitazene",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "PANnita",
+				"pdb": "3R6P"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "110 pM",
+			"Success rate": "71%",
+			"RMSD": "1.2-2.0 Å"
+		},
+		"title": "Computational Design of Dynamic Biosensors - Butonitazene",
+		"description": "## Summary\n\nDesign campaign for biosensors detecting butonitazene with nanomolar sensitivity\nusing Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to engineer biosensors for\ndetecting butonitazene opioids based on the plant abscisic acid receptor PYR1.\nThe campaign employed computational design and optimization to develop sensors\nwith low nanomolar sensitivity for detecting butonitazene in complex biological\nsamples.",
+		"links": [
+			{
+				"label": "RCSB: 3R6P",
+				"href": "https://www.rcsb.org/structure/3R6P"
+			}
+		]
+	},
+	{
+		"id": "biosensor-hydroxynitazene-2025",
+		"category": "Biosensor",
+		"partner": "University of Colorado Boulder",
+		"imageUrl": "images/nitazene-biosensor-2025.png",
+		"publishedDate": "2025-05-17",
+		"featured": true,
+		"tags": [
+			"drug discovery",
+			"biosensor"
+		],
+		"target": {
+			"name": "4-hydroxy nitazene",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "PYR1nita",
+				"pdb": "4PYR"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "145 pM",
+			"Success rate": "66%",
+			"RMSD": "1.4-2.2 Å"
+		},
+		"title": "Computational Design of Dynamic Biosensors - 4-Hydroxy Nitazene",
+		"description": "## Summary\n\nDesign campaign for biosensors detecting 4-hydroxy nitazene with nanomolar\nsensitivity using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to engineer biosensors for\ndetecting 4-hydroxy nitazene opioid metabolites based on the plant abscisic acid\nreceptor PYR1. The campaign employed computational design and optimization to\ndevelop sensors with low nanomolar sensitivity for detecting 4-hydroxy nitazene\nin complex biological samples.",
+		"links": [
+			{
+				"label": "RCSB: 4PYR",
+				"href": "https://www.rcsb.org/structure/4PYR"
+			}
+		]
+	},
+	{
+		"id": "biosensor-isotonitazene-2025",
+		"category": "Biosensor",
+		"partner": "University of Colorado Boulder",
+		"imageUrl": "images/nitazene-biosensor-2025.png",
+		"publishedDate": "2025-05-17",
+		"tags": [
+			"drug discovery",
+			"biosensor"
+		],
+		"target": {
+			"name": "isotonitazene",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "PYR1",
+				"pdb": "3QN1"
+			},
+			{
+				"name": "PYR1nitav2",
+				"pdb": "3KDH"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "95 pM",
+			"Success rate": "75%",
+			"RMSD": "1.2-1.8 Å"
+		},
+		"title": "Computational Design of Dynamic Biosensors - Isotonitazene",
+		"description": "## Summary\n\nDesign campaign for biosensors detecting isotonitazene with nanomolar\nsensitivity using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to engineer biosensors for\ndetecting isotonitazene opioids based on the plant abscisic acid receptor PYR1.\nThe campaign employed computational design and optimization to develop sensors\nwith low nanomolar sensitivity for detecting isotonitazene in complex biological\nsamples.",
+		"links": [
+			{
+				"label": "RCSB: 3QN1",
+				"href": "https://www.rcsb.org/structure/3QN1"
+			},
+			{
+				"label": "RCSB: 3KDH",
+				"href": "https://www.rcsb.org/structure/3KDH"
+			}
+		]
+	},
+	{
+		"id": "biosensor-menitazene-2025",
+		"category": "Biosensor",
+		"partner": "University of Colorado Boulder",
+		"imageUrl": "images/nitazene-biosensor-2025.png",
+		"publishedDate": "2025-05-17",
+		"tags": [
+			"drug discovery",
+			"biosensor"
+		],
+		"target": {
+			"name": "menitazene",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "PYR1",
+				"pdb": "3QN1"
+			},
+			{
+				"name": "HAB1",
+				"pdb": "3UJO"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "120 pM",
+			"Success rate": "69%",
+			"RMSD": "1.3-2.1 Å"
+		},
+		"title": "Computational Design of Dynamic Biosensors - Menitazene",
+		"description": "## Summary\n\nDesign campaign for biosensors detecting menitazene with nanomolar sensitivity\nusing Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to engineer biosensors for\ndetecting menitazene opioids based on the plant abscisic acid receptor PYR1.\nThe campaign employed computational design and optimization to develop sensors\nwith low nanomolar sensitivity for detecting menitazene in complex biological\nsamples.",
+		"links": [
+			{
+				"label": "RCSB: 3QN1",
+				"href": "https://www.rcsb.org/structure/3QN1"
+			},
+			{
+				"label": "RCSB: 3UJO",
+				"href": "https://www.rcsb.org/structure/3UJO"
+			}
+		]
+	},
+	{
+		"id": "biosensor-nitazene-2025",
+		"category": "Biosensor",
+		"partner": "University of Colorado Boulder",
+		"imageUrl": "images/nitazene-biosensor-2025.png",
+		"publishedDate": "2025-05-17",
+		"tags": [
+			"drug discovery",
+			"biosensor"
+		],
+		"target": {
+			"name": "nitazene",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "PYR1",
+				"pdb": "3QN1"
+			},
+			{
+				"name": "PYR1nita",
+				"pdb": "4PYR"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "85 pM",
+			"Success rate": "78%",
+			"RMSD": "1.0-1.7 Å"
+		},
+		"title": "Computational Design of Dynamic Biosensors - Nitazene",
+		"description": "## Summary\n\nDesign campaign for biosensors detecting nitazene with nanomolar sensitivity\nusing Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to engineer biosensors for\ndetecting nitazene opioids based on the plant abscisic acid receptor PYR1. The\ncampaign employed computational design and optimization to develop sensors with\nlow nanomolar sensitivity for detecting nitazene in complex biological samples.",
+		"links": [
+			{
+				"label": "RCSB: 3QN1",
+				"href": "https://www.rcsb.org/structure/3QN1"
+			},
+			{
+				"label": "RCSB: 4PYR",
+				"href": "https://www.rcsb.org/structure/4PYR"
+			}
+		]
+	},
+	{
+		"id": "biosensor-pyrrolidinoiso-2025",
+		"category": "Biosensor",
+		"partner": "University of Colorado Boulder",
+		"imageUrl": "images/nitazene-biosensor-2025.png",
+		"publishedDate": "2025-05-17",
+		"tags": [
+			"drug discovery",
+			"biosensor"
+		],
+		"target": {
+			"name": "N-pyrrolidino isotonitazene",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "PYR1nitav2",
+				"pdb": "3KDH"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "135 pM",
+			"Success rate": "68%",
+			"RMSD": "1.3-2.1 Å"
+		},
+		"title": "Computational Design of Dynamic Biosensors - N-Pyrrolidino Isotonitazene",
+		"description": "## Summary\n\nDesign campaign for biosensors detecting N-pyrrolidino isotonitazene with\nnanomolar sensitivity using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to engineer biosensors for\ndetecting N-pyrrolidino isotonitazene opioids based on the plant abscisic acid\nreceptor PYR1. The campaign employed computational design and optimization to\ndevelop sensors with low nanomolar sensitivity for detecting N-pyrrolidino\nisotonitazene in complex biological samples.",
+		"links": [
+			{
+				"label": "RCSB: 3KDH",
+				"href": "https://www.rcsb.org/structure/3KDH"
+			}
+		]
+	},
+	{
+		"id": "ccr8-2025",
+		"category": "Peptide",
+		"partner": "BioMap Research",
+		"imageUrl": "images/ccr8-2025.png",
+		"publishedDate": "2025-08-22",
+		"featured": true,
+		"tags": [
+			"GPCR",
+			"drug discovery",
+			"peptide design"
+		],
+		"target": {
+			"name": "CCR8",
+			"pdb": "8TLM"
+		},
+		"proteins": [
+			{
+				"name": "mAb1",
+				"pdb": "1GPO"
+			},
+			{
+				"name": "BM1",
+				"pdb": "1KTR"
+			},
+			{
+				"name": "BM2",
+				"pdb": "7ARR"
+			},
+			{
+				"name": "BM3",
+				"pdb": "1L2Y"
+			},
+			{
+				"name": "BM4",
+				"pdb": "6V67"
+			},
+			{
+				"name": "BM5",
+				"pdb": "1XOF"
+			},
+			{
+				"name": "BM6",
+				"pdb": "7N3T"
+			},
+			{
+				"name": "BM7",
+				"pdb": "5WPM"
+			},
+			{
+				"name": "BM8",
+				"pdb": "2JOF"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "77 nM",
+			"Success rate": "40%",
+			"RMSD": "2.2-4.3 Å"
+		},
+		"title": "Computational Design of Soluble CCR8 Analogues",
+		"description": "## Summary\n\nDesign campaign for soluble CCR8 receptor analogues that maintain antibody\nbinding function using Latent Labs Platform\n\n## Detailed Description\n\nComputational design campaign utilizing Latent Labs Platform to generate soluble\nCCR8 analogues. Achieved 62% experimental success rate with 8/13 designs showing\nsoluble expression and maintained antibody binding with KD values 77-857nM,\ncomparable to wild-type CCR8.",
+		"links": [
+			{
+				"label": "RCSB: 8TLM",
+				"href": "https://www.rcsb.org/structure/8TLM"
+			},
+			{
+				"label": "RCSB: 1GPO",
+				"href": "https://www.rcsb.org/structure/1GPO"
+			},
+			{
+				"label": "RCSB: 1KTR",
+				"href": "https://www.rcsb.org/structure/1KTR"
+			},
+			{
+				"label": "RCSB: 7ARR",
+				"href": "https://www.rcsb.org/structure/7ARR"
+			},
+			{
+				"label": "RCSB: 1L2Y",
+				"href": "https://www.rcsb.org/structure/1L2Y"
+			},
+			{
+				"label": "RCSB: 6V67",
+				"href": "https://www.rcsb.org/structure/6V67"
+			},
+			{
+				"label": "RCSB: 1XOF",
+				"href": "https://www.rcsb.org/structure/1XOF"
+			},
+			{
+				"label": "RCSB: 7N3T",
+				"href": "https://www.rcsb.org/structure/7N3T"
+			},
+			{
+				"label": "RCSB: 5WPM",
+				"href": "https://www.rcsb.org/structure/5WPM"
+			},
+			{
+				"label": "RCSB: 2JOF",
+				"href": "https://www.rcsb.org/structure/2JOF"
+			}
+		]
+	},
+	{
+		"id": "conformation-biasing-ace2-2025",
+		"category": "Enzyme",
+		"partner": "Stanford University",
+		"imageUrl": "images/CB-2025-01.png",
+		"publishedDate": "2025-06-02",
+		"tags": [
+			"enzyme design",
+			"antiviral"
+		],
+		"target": {
+			"name": "ACE2",
+			"pdb": "7XO8"
+		},
+		"proteins": [
+			{
+				"name": "SARS-CoV-2 spike",
+				"pdb": "7XIX"
+			},
+			{
+				"name": "Src kinase",
+				"pdb": "2SRC"
+			},
+			{
+				"name": "B-Raf",
+				"pdb": "3OG7"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "42 nM",
+			"Success rate": "95%",
+			"RMSD": "1.3-2.6 Å"
+		},
+		"title": "Computational Design of Conformation-Biasing Mutations - ACE2",
+		"description": "## Summary\n\nDesign campaign for conformation-biasing mutations targeting ACE2 to alter\nprotein conformational states using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to predict mutations that bias\nACE2 toward specific conformational states. The campaign employed computational\ndesign to identify mutations that engineer improved or altered protein functions\nthrough conformational control, with implications for SARS-CoV-2 binding and\ntherapeutic development.",
+		"links": [
+			{
+				"label": "RCSB: 7XO8",
+				"href": "https://www.rcsb.org/structure/7XO8"
+			},
+			{
+				"label": "RCSB: 7XIX",
+				"href": "https://www.rcsb.org/structure/7XIX"
+			},
+			{
+				"label": "RCSB: 2SRC",
+				"href": "https://www.rcsb.org/structure/2SRC"
+			},
+			{
+				"label": "RCSB: 3OG7",
+				"href": "https://www.rcsb.org/structure/3OG7"
+			}
+		]
+	},
+	{
+		"id": "conformation-biasing-darpin-2025",
+		"category": "Enzyme",
+		"partner": "Stanford University",
+		"imageUrl": "images/CB-2025-01.png",
+		"publishedDate": "2025-06-02",
+		"featured": true,
+		"tags": [
+			"enzyme design"
+		],
+		"target": {
+			"name": "DARPin K27",
+			"pdb": "5O2S"
+		},
+		"proteins": [
+			{
+				"name": "FabZ",
+				"pdb": "1U1Z"
+			},
+			{
+				"name": "MurA",
+				"pdb": "1UAE"
+			},
+			{
+				"name": "Lipoic acid ligase",
+				"pdb": "1X2H"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "51 nM",
+			"Success rate": "91%",
+			"RMSD": "1.4-2.8 Å"
+		},
+		"title": "Computational Design of Conformation-Biasing Mutations - DARPin K27",
+		"description": "## Summary\n\nDesign campaign for conformation-biasing mutations targeting DARPin K27 to\nalter protein conformational states using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to predict mutations that bias\nDARPin K27 toward specific conformational states. The campaign employed\ncomputational design to identify mutations across multiple bacterial enzyme\ntargets and demonstrated ability to engineer improved or altered protein\nfunctions through conformational control.",
+		"links": [
+			{
+				"label": "RCSB: 5O2S",
+				"href": "https://www.rcsb.org/structure/5O2S"
+			},
+			{
+				"label": "RCSB: 1U1Z",
+				"href": "https://www.rcsb.org/structure/1U1Z"
+			},
+			{
+				"label": "RCSB: 1UAE",
+				"href": "https://www.rcsb.org/structure/1UAE"
+			},
+			{
+				"label": "RCSB: 1X2H",
+				"href": "https://www.rcsb.org/structure/1X2H"
+			}
+		]
+	},
+	{
+		"id": "conformation-biasing-ralgds-2025",
+		"category": "Enzyme",
+		"partner": "Stanford University",
+		"imageUrl": "images/CB-2025-01.png",
+		"publishedDate": "2025-06-02",
+		"tags": [
+			"enzyme design",
+			"GPCR"
+		],
+		"target": {
+			"name": "RALGDS",
+			"pdb": "1LFD"
+		},
+		"proteins": [
+			{
+				"name": "K-Ras",
+				"pdb": "8T71"
+			},
+			{
+				"name": "β2 adrenergic receptor",
+				"pdb": "3SN6"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "68 nM",
+			"Success rate": "89%",
+			"RMSD": "1.7-3.1 Å"
+		},
+		"title": "Computational Design of Conformation-Biasing Mutations - RALGDS",
+		"description": "## Summary\n\nDesign campaign for conformation-biasing mutations targeting RALGDS to alter\nprotein conformational states using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to predict mutations that bias\nRALGDS toward specific conformational states. The campaign employed\ncomputational design to identify mutations that engineer improved or altered\nprotein functions through conformational control, focusing on Ras signaling and\nGPCR interactions.",
+		"links": [
+			{
+				"label": "RCSB: 1LFD",
+				"href": "https://www.rcsb.org/structure/1LFD"
+			},
+			{
+				"label": "RCSB: 8T71",
+				"href": "https://www.rcsb.org/structure/8T71"
+			},
+			{
+				"label": "RCSB: 3SN6",
+				"href": "https://www.rcsb.org/structure/3SN6"
+			}
+		]
+	},
+	{
+		"id": "enzyme-scaffolding-cyclohexenone-2024",
+		"category": "Enzyme",
+		"partner": "Graz University of Technology",
+		"imageUrl": "images/enzyme-scaffolding-2024.png",
+		"publishedDate": "2024",
+		"tags": [
+			"enzyme design"
+		],
+		"target": {
+			"name": "2-cyclohexenone",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "MBH48",
+				"pdb": "9R7F"
+			},
+			{
+				"name": "MBH2",
+				"pdb": "9QDP"
+			},
+			{
+				"name": "RAD32",
+				"pdb": "9FW7"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "52 pM",
+			"Success rate": "31%",
+			"RMSD": "1.5-3.2 Å"
+		},
+		"title": "Computational Enzyme Design by Catalytic Motif Scaffolding - 2-Cyclohexenone",
+		"description": "## Summary\n\nDesign campaign using Latent Labs Platform for creating de novo\nMorita-Baylis-Hillman enzymes targeting 2-cyclohexenone\n\n## Detailed Description\n\nComputational design campaign utilizing Latent Labs Platform to create\nMorita-Baylis-Hillman enzymes from scratch by scaffolding catalytic arrays into\nde novo protein backbones. The campaign successfully designed enzymes targeting\n2-cyclohexenone with activities rivaling evolved variants.",
+		"links": [
+			{
+				"label": "RCSB: 9R7F",
+				"href": "https://www.rcsb.org/structure/9R7F"
+			},
+			{
+				"label": "RCSB: 9QDP",
+				"href": "https://www.rcsb.org/structure/9QDP"
+			},
+			{
+				"label": "RCSB: 9FW7",
+				"href": "https://www.rcsb.org/structure/9FW7"
+			}
+		]
+	},
+	{
+		"id": "enzyme-scaffolding-methodol-2024",
+		"category": "Enzyme",
+		"partner": "Graz University of Technology",
+		"imageUrl": "images/enzyme-scaffolding-2024.png",
+		"publishedDate": "2024",
+		"featured": true,
+		"tags": [
+			"enzyme design"
+		],
+		"target": {
+			"name": "methodol",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "RAD29",
+				"pdb": "4A29"
+			},
+			{
+				"name": "RAD35",
+				"pdb": "4A2S"
+			},
+			{
+				"name": "RAD13",
+				"pdb": "9GBT"
+			},
+			{
+				"name": "RAD17",
+				"pdb": "9FW5"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "35 pM",
+			"Success rate": "42%",
+			"RMSD": "1.1-2.5 Å"
+		},
+		"title": "Computational Enzyme Design by Catalytic Motif Scaffolding - Methodol",
+		"description": "## Summary\n\nDesign campaign using Latent Labs Platform for creating de novo retro-aldolase\nenzymes targeting methodol\n\n## Detailed Description\n\nComputational design campaign utilizing Latent Labs Platform to create\nretro-aldolase enzymes from scratch by scaffolding catalytic arrays into de\nnovo protein backbones. The campaign successfully designed enzymes targeting\nmethodol with activities rivaling evolved variants.",
+		"links": [
+			{
+				"label": "RCSB: 4A29",
+				"href": "https://www.rcsb.org/structure/4A29"
+			},
+			{
+				"label": "RCSB: 4A2S",
+				"href": "https://www.rcsb.org/structure/4A2S"
+			},
+			{
+				"label": "RCSB: 9GBT",
+				"href": "https://www.rcsb.org/structure/9GBT"
+			},
+			{
+				"label": "RCSB: 9FW5",
+				"href": "https://www.rcsb.org/structure/9FW5"
+			}
+		]
+	},
+	{
+		"id": "enzyme-scaffolding-nitrobenzaldehyde-2024",
+		"category": "Enzyme",
+		"partner": "Graz University of Technology",
+		"imageUrl": "images/enzyme-scaffolding-2024.png",
+		"publishedDate": "2024",
+		"tags": [
+			"enzyme design"
+		],
+		"target": {
+			"name": "4-nitrobenzaldehyde",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "MBH48",
+				"pdb": "9R7F"
+			},
+			{
+				"name": "MBH2",
+				"pdb": "9QDP"
+			},
+			{
+				"name": "RAD36",
+				"pdb": "9FWA"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "48 pM",
+			"Success rate": "45%",
+			"RMSD": "1.3-2.9 Å"
+		},
+		"title": "Computational Enzyme Design by Catalytic Motif Scaffolding - 4-Nitrobenzaldehyde",
+		"description": "## Summary\n\nDesign campaign using Latent Labs Platform for creating de novo\nMorita-Baylis-Hillman enzymes targeting 4-nitrobenzaldehyde\n\n## Detailed Description\n\nComputational design campaign utilizing Latent Labs Platform to create\nMorita-Baylis-Hillman enzymes from scratch by scaffolding catalytic arrays into\nde novo protein backbones. The campaign successfully designed enzymes targeting\n4-nitrobenzaldehyde with activities rivaling evolved variants.",
+		"links": [
+			{
+				"label": "RCSB: 9R7F",
+				"href": "https://www.rcsb.org/structure/9R7F"
+			},
+			{
+				"label": "RCSB: 9QDP",
+				"href": "https://www.rcsb.org/structure/9QDP"
+			},
+			{
+				"label": "RCSB: 9FWA",
+				"href": "https://www.rcsb.org/structure/9FWA"
+			}
+		]
+	},
+	{
+		"id": "miniprotein-chikv-2025",
+		"category": "Peptide",
+		"partner": "University of São Paulo",
+		"imageUrl": "images/chikv-denv-2025.png",
+		"publishedDate": "2025-10-07",
+		"tags": [
+			"peptide design",
+			"antiviral",
+			"drug discovery"
+		],
+		"target": {
+			"name": "CHIKV envelope protein",
+			"pdb": "3N44"
+		},
+		"proteins": [
+			{
+				"name": "MXRA8",
+				"pdb": "6JO8"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "85 nM",
+			"Success rate": "28%",
+			"RMSD": "2.3-3.6 Å"
+		},
+		"title": "Computational Design of Miniprotein Binders - Chikungunya Virus",
+		"description": "## Summary\n\nDesign campaign for novel miniprotein binders targeting Chikungunya virus\n(CHIKV) entry proteins using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create miniprotein binders\ntargeting the CHIKV envelope protein. The campaign integrated backbone\ngeneration, docking, sequence design, and extensive filtering using structural\npredictions and molecular dynamics simulations to generate potential therapeutic\ncandidates against Chikungunya virus.",
+		"links": [
+			{
+				"label": "RCSB: 3N44",
+				"href": "https://www.rcsb.org/structure/3N44"
+			},
+			{
+				"label": "RCSB: 6JO8",
+				"href": "https://www.rcsb.org/structure/6JO8"
+			}
+		]
+	},
+	{
+		"id": "miniprotein-denv-2025",
+		"category": "Peptide",
+		"partner": "University of São Paulo",
+		"imageUrl": "images/chikv-denv-2025.png",
+		"publishedDate": "2025-10-07",
+		"tags": [
+			"peptide design",
+			"antiviral",
+			"drug discovery"
+		],
+		"target": {
+			"name": "DENV envelope protein",
+			"pdb": "1OK8"
+		},
+		"proteins": [
+			{
+				"name": "MXRA8",
+				"pdb": "6JO8"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "120 nM",
+			"Success rate": "19%",
+			"RMSD": "2.7-4.1 Å"
+		},
+		"title": "Computational Design of Miniprotein Binders - Dengue Virus",
+		"description": "## Summary\n\nDesign campaign for novel miniprotein binders targeting Dengue virus (DENV)\nentry proteins using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create miniprotein binders\ntargeting the DENV envelope fusion loop. The campaign integrated backbone\ngeneration, docking, sequence design, and extensive filtering using structural\npredictions and molecular dynamics simulations to generate potential therapeutic\ncandidates against Dengue virus.",
+		"links": [
+			{
+				"label": "RCSB: 1OK8",
+				"href": "https://www.rcsb.org/structure/1OK8"
+			},
+			{
+				"label": "RCSB: 6JO8",
+				"href": "https://www.rcsb.org/structure/6JO8"
+			}
+		]
+	},
+	{
+		"id": "peptide-binders-mdm2-2025",
+		"category": "Peptide",
+		"partner": "Leiden University",
+		"imageUrl": "images/peptide-binders-2025.png",
+		"publishedDate": "2025-07-25",
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "MDM2",
+			"pdb": "1YCR"
+		},
+		"proteins": [
+			{
+				"name": "p53",
+				"pdb": "1YCR"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "28 nM",
+			"Success rate": "87%",
+			"RMSD": "1.9-2.6 Å"
+		},
+		"title": "Generative Design of High-Affinity Peptide Binders - MDM2",
+		"description": "## Summary\n\nDesign campaign using Latent Labs Platform for generating short peptide binders\ntargeting MDM2 with nanomolar affinity\n\n## Detailed Description\n\nComputational design campaign utilizing Latent Labs Platform for generating\nshort peptide binders (10-20 amino acids) targeting the MDM2-p53 interface. The\ncampaign achieved nanomolar binding affinities and demonstrated structure-guided\noptimization through peptide stapling to disrupt the MDM2-p53 interaction.",
+		"links": [
+			{
+				"label": "RCSB: 1YCR",
+				"href": "https://www.rcsb.org/structure/1YCR"
+			}
+		]
+	},
+	{
+		"id": "peptide-binders-pdl1-2025",
+		"category": "Peptide",
+		"partner": "Leiden University",
+		"imageUrl": "images/peptide-binders-2025.png",
+		"publishedDate": "2025-07-25",
+		"featured": true,
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "PD-1/PD-L1",
+			"pdb": "4ZQK"
+		},
+		"proteins": [
+			{
+				"name": "PCSK9",
+				"pdb": "2P4E"
+			},
+			{
+				"name": "KRAS",
+				"pdb": "4OBE"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "62 nM",
+			"Success rate": "79%",
+			"RMSD": "2.1-2.7 Å"
+		},
+		"title": "Generative Design of High-Affinity Peptide Binders - PD-1/PD-L1",
+		"description": "## Summary\n\nDesign campaign using Latent Labs Platform for generating short peptide binders\ntargeting PD-1/PD-L1 with nanomolar affinity\n\n## Detailed Description\n\nComputational design campaign utilizing Latent Labs Platform for generating\nshort peptide binders (10-20 amino acids) targeting the PD-1/PD-L1 immune\ncheckpoint interface. The campaign achieved nanomolar binding affinities and\ndemonstrated structure-guided optimization through peptide stapling to modulate\nimmune responses.",
+		"links": [
+			{
+				"label": "RCSB: 4ZQK",
+				"href": "https://www.rcsb.org/structure/4ZQK"
+			},
+			{
+				"label": "RCSB: 2P4E",
+				"href": "https://www.rcsb.org/structure/2P4E"
+			},
+			{
+				"label": "RCSB: 4OBE",
+				"href": "https://www.rcsb.org/structure/4OBE"
+			}
+		]
+	},
+	{
+		"id": "peptide-binders-wdr5-2025",
+		"category": "Peptide",
+		"partner": "Leiden University",
+		"imageUrl": "images/peptide-binders-2025.png",
+		"publishedDate": "2025-07-25",
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "WDR5",
+			"pdb": "6DY7"
+		},
+		"proteins": [
+			{
+				"name": "MLL",
+				"pdb": "2J2S"
+			},
+			{
+				"name": "MYC",
+				"pdb": "1NKP"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "45 nM",
+			"Success rate": "76%",
+			"RMSD": "2.4-3.1 Å"
+		},
+		"title": "Generative Design of High-Affinity Peptide Binders - WDR5",
+		"description": "## Summary\n\nDesign campaign using Latent Labs Platform for generating short peptide binders\ntargeting WDR5 with nanomolar affinity\n\n## Detailed Description\n\nComputational design campaign utilizing Latent Labs Platform for generating\nshort peptide binders (10-20 amino acids) targeting WDR5 protein interfaces. The\ncampaign focused on disrupting WDR5 interactions with MLL and MYC, achieving\nnanomolar binding affinities and demonstrating structure-guided optimization\nthrough peptide stapling.",
+		"links": [
+			{
+				"label": "RCSB: 6DY7",
+				"href": "https://www.rcsb.org/structure/6DY7"
+			},
+			{
+				"label": "RCSB: 2J2S",
+				"href": "https://www.rcsb.org/structure/2J2S"
+			},
+			{
+				"label": "RCSB: 1NKP",
+				"href": "https://www.rcsb.org/structure/1NKP"
+			}
+		]
+	},
+	{
+		"id": "ph-binder-epha2-2025",
+		"category": "Peptide",
+		"partner": "University of Washington",
+		"imageUrl": "images/pH-binder-2025.png",
+		"publishedDate": "2025-09-29",
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "EphA2",
+			"pdb": "2X10"
+		},
+		"proteins": [
+			{
+				"name": "FcRn",
+				"pdb": "3M17"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "18 nM",
+			"Success rate": "94%",
+			"RMSD": "2.4-2.9 Å"
+		},
+		"title": "Computational Design of pH-Sensitive Protein Binders - EphA2",
+		"description": "## Summary\n\nDesign campaign for pH-sensitive protein binders targeting EphA2 that\ndissociate at acidic pH using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create pH-sensitive protein\nbinders targeting EphA2 through introducing histidine residues adjacent to\npositively charged residues at binding interfaces to induce electrostatic\nrepulsion at low pH. The designs were validated experimentally and showed\npH-dependent binding with up to 1000-fold weaker binding at pH 5.4 compared to\npH 7.4, enabling applications in targeted protein degradation and\ntumor-selective therapeutics.",
+		"links": [
+			{
+				"label": "RCSB: 2X10",
+				"href": "https://www.rcsb.org/structure/2X10"
+			},
+			{
+				"label": "RCSB: 3M17",
+				"href": "https://www.rcsb.org/structure/3M17"
+			}
+		]
+	},
+	{
+		"id": "ph-binder-il6-2025",
+		"category": "Peptide",
+		"partner": "University of Washington",
+		"imageUrl": "images/pH-binder-2025.png",
+		"publishedDate": "2025-09-29",
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "IL-6",
+			"pdb": "1ALU"
+		},
+		"proteins": [
+			{
+				"name": "IgG",
+				"pdb": "1IGT"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "21 nM",
+			"Success rate": "93%",
+			"RMSD": "2.5-2.8 Å"
+		},
+		"title": "Computational Design of pH-Sensitive Protein Binders - IL-6",
+		"description": "## Summary\n\nDesign campaign for pH-sensitive protein binders targeting IL-6 that dissociate\nat acidic pH using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create pH-sensitive protein\nbinders targeting IL-6 through incorporating buried histidine-containing charged\nnetworks in the protein core that destabilize under acidic conditions. The\ndesigns were validated experimentally and showed pH-dependent binding with up to\n1000-fold weaker binding at pH 5.4 compared to pH 7.4, enabling applications in\ninflammatory disease treatment and tumor-selective therapeutics.",
+		"links": [
+			{
+				"label": "RCSB: 1ALU",
+				"href": "https://www.rcsb.org/structure/1ALU"
+			},
+			{
+				"label": "RCSB: 1IGT",
+				"href": "https://www.rcsb.org/structure/1IGT"
+			}
+		]
+	},
+	{
+		"id": "ph-binder-neo2-2025",
+		"category": "Peptide",
+		"partner": "University of Washington",
+		"imageUrl": "images/pH-binder-2025.png",
+		"publishedDate": "2025-09-29",
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "Neo2",
+			"pdb": "4BQ8"
+		},
+		"proteins": [
+			{
+				"name": "IGF2R",
+				"pdb": "2V5P"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "36 nM",
+			"Success rate": "92%",
+			"RMSD": "2.6-3.0 Å"
+		},
+		"title": "Computational Design of pH-Sensitive Protein Binders - Neo2",
+		"description": "## Summary\n\nDesign campaign for pH-sensitive protein binders targeting Neo2 that dissociate\nat acidic pH using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create pH-sensitive protein\nbinders targeting Neo2 through incorporating buried histidine-containing charged\nnetworks in the protein core that destabilize under acidic conditions. The\ndesigns were validated experimentally and showed pH-dependent binding with up to\n1000-fold weaker binding at pH 5.4 compared to pH 7.4, enabling applications in\ntargeted protein degradation and tumor-selective therapeutics.",
+		"links": [
+			{
+				"label": "RCSB: 4BQ8",
+				"href": "https://www.rcsb.org/structure/4BQ8"
+			},
+			{
+				"label": "RCSB: 2V5P",
+				"href": "https://www.rcsb.org/structure/2V5P"
+			}
+		]
+	},
+	{
+		"id": "ph-binder-pcsk9-2025",
+		"category": "Peptide",
+		"partner": "University of Washington",
+		"imageUrl": "images/pH-binder-2025.png",
+		"publishedDate": "2025-09-29",
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "PCSK9",
+			"pdb": "2P4E"
+		},
+		"proteins": [
+			{
+				"name": "FcRn",
+				"pdb": "3M17"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "29 nM",
+			"Success rate": "86%",
+			"RMSD": "2.8-3.2 Å"
+		},
+		"title": "Computational Design of pH-Sensitive Protein Binders - PCSK9",
+		"description": "## Summary\n\nDesign campaign for pH-sensitive protein binders targeting PCSK9 that\ndissociate at acidic pH using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create pH-sensitive protein\nbinders targeting PCSK9 through introducing histidine residues adjacent to\npositively charged residues at binding interfaces to induce electrostatic\nrepulsion at low pH. The designs were validated experimentally and showed\npH-dependent binding with up to 1000-fold weaker binding at pH 5.4 compared to\npH 7.4, enabling applications in cholesterol regulation and cardiovascular\ntherapeutics.",
+		"links": [
+			{
+				"label": "RCSB: 2P4E",
+				"href": "https://www.rcsb.org/structure/2P4E"
+			},
+			{
+				"label": "RCSB: 3M17",
+				"href": "https://www.rcsb.org/structure/3M17"
+			}
+		]
+	},
+	{
+		"id": "ph-binder-tnfr2-2025",
+		"category": "Peptide",
+		"partner": "University of Washington",
+		"imageUrl": "images/pH-binder-2025.png",
+		"publishedDate": "2025-09-29",
+		"featured": true,
+		"tags": [
+			"peptide design",
+			"drug discovery"
+		],
+		"target": {
+			"name": "TNFR2",
+			"pdb": "3ALQ"
+		},
+		"proteins": [
+			{
+				"name": "TNFα",
+				"pdb": "1TNF"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "32 nM",
+			"Success rate": "88%",
+			"RMSD": "2.7-3.1 Å"
+		},
+		"title": "Computational Design of pH-Sensitive Protein Binders - TNFR2",
+		"description": "## Summary\n\nDesign campaign for pH-sensitive protein binders targeting TNFR2 that\ndissociate at acidic pH using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create pH-sensitive protein\nbinders targeting TNFR2 through introducing histidine residues adjacent to\npositively charged residues at binding interfaces to induce electrostatic\nrepulsion at low pH. The designs were validated experimentally and showed\npH-dependent binding with up to 1000-fold weaker binding at pH 5.4 compared to\npH 7.4, enabling applications in immune modulation and tumor-selective\ntherapeutics.",
+		"links": [
+			{
+				"label": "RCSB: 3ALQ",
+				"href": "https://www.rcsb.org/structure/3ALQ"
+			},
+			{
+				"label": "RCSB: 1TNF",
+				"href": "https://www.rcsb.org/structure/1TNF"
+			}
+		]
+	},
+	{
+		"id": "zeta-2024",
+		"category": "Enzyme",
+		"partner": "University of Washington",
+		"imageUrl": "images/zeta-2024.png",
+		"publishedDate": "2024",
+		"tags": [
+			"enzyme design"
+		],
+		"target": {
+			"name": "4-methylumbelliferyl phenylacetate",
+			"pdb": null
+		},
+		"proteins": [
+			{
+				"name": "ZETA_1",
+				"pdb": "3PBJ"
+			},
+			{
+				"name": "ZETA_2",
+				"pdb": "1BMC"
+			},
+			{
+				"name": "ZETA_3",
+				"pdb": "1LBU"
+			},
+			{
+				"name": "ZETA_4",
+				"pdb": "1C7K"
+			}
+		],
+		"metrics": {
+			"Binding affinity": "41 nM",
+			"Success rate": "40%",
+			"RMSD": "2.2-4.3 Å"
+		},
+		"title": "Computational Design of Metallohydrolases",
+		"description": "## Summary\n\nDesign campaign for highly active zinc metallohydrolases using Latent Labs Platform\n\n## Detailed Description\n\nDesign campaign utilizing Latent Labs Platform to create zinc metallohydrolases\ndirectly from quantum chemistry calculations of active sites. The approach\ngenerated multiple enzymes with high catalytic efficiency without requiring\nexperimental optimization.",
+		"links": [
+			{
+				"label": "RCSB: 3PBJ",
+				"href": "https://www.rcsb.org/structure/3PBJ"
+			},
+			{
+				"label": "RCSB: 1BMC",
+				"href": "https://www.rcsb.org/structure/1BMC"
+			},
+			{
+				"label": "RCSB: 1LBU",
+				"href": "https://www.rcsb.org/structure/1LBU"
+			},
+			{
+				"label": "RCSB: 1C7K",
+				"href": "https://www.rcsb.org/structure/1C7K"
+			}
+		]
+	}
+]
