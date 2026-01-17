@@ -1,7 +1,7 @@
 'use client';
 
 import type { Project } from '@/types/project';
-import { ProjectCard } from '@/components/gallery/ProjectCard';
+import { ProjectCard } from '@/src/app/explore/components/ProjectCard';
 import { AnimatePresence, motion } from 'framer-motion';
 
 // GalleryGrid.tsx
