@@ -2,78 +2,89 @@
 
 import { PluginUIContext } from 'molstar/lib/mol-plugin-ui/context';
 import { useEffect, useRef } from 'react';
-import { createRoot, Root } from 'react-dom/client';
 
 export default function MolstarViewer({ pdbId }: { pdbId: string }) {
   const hostRef = useRef<HTMLDivElement | null>(null);
-  const reactRootRef = useRef<Root | null>(null);
+  const pluginRef = useRef<PluginUIContext | null>(null);
 
   useEffect(() => {
     let disposed = false;
-    let ctx: PluginUIContext;
 
     async function init() {
       if (!hostRef.current) return;
+
+      pluginRef.current?.dispose();
+      pluginRef.current = null;
 
       const { createPluginUI } = await import('molstar/lib/mol-plugin-ui');
       const { DefaultPluginUISpec } = await import(
         'molstar/lib/mol-plugin-ui/spec'
       );
+      const { renderReact18 } = await import(
+        'molstar/lib/mol-plugin-ui/react18'
+      );
       const { PluginConfig } = await import('molstar/lib/mol-plugin/config');
 
-      if (disposed) return;
+      if (disposed || !hostRef.current) return;
 
       hostRef.current.innerHTML = '';
-      reactRootRef.current = createRoot(hostRef.current);
 
       const spec = DefaultPluginUISpec();
 
-      ctx = await createPluginUI({
+      const plugin = await createPluginUI({
         target: hostRef.current,
-        render: (component) => {
-          reactRootRef.current!.render(component);
-        },
         spec,
-        onBeforeUIRender: (plugin) => {
-          plugin.config.set(PluginConfig.Viewport.ShowExpand, false);
-          plugin.config.set(PluginConfig.Viewport.ShowSelectionMode, false);
-          plugin.config.set(PluginConfig.Viewport.ShowAnimation, false);
+        render: renderReact18,
+        onBeforeUIRender: (p) => {
+          p.config.set(PluginConfig.Viewport.ShowExpand, false);
+          p.config.set(PluginConfig.Viewport.ShowSelectionMode, false);
+          p.config.set(PluginConfig.Viewport.ShowAnimation, false);
         },
       });
 
+      if (disposed) {
+        plugin.dispose();
+        return;
+      }
+
+      pluginRef.current = plugin;
+
+      // Load structure
       const url = `https://files.rcsb.org/download/${pdbId}.cif`;
 
-      // ✅ canonical Mol* loading path
-      const data = await ctx.builders.data.download(
+      const data = await plugin.builders.data.download(
         { url, isBinary: false },
         { state: { isGhost: true } }
       );
 
-      const trajectory = await ctx.builders.structure.parseTrajectory(
+      const trajectory = await plugin.builders.structure.parseTrajectory(
         data,
         'mmcif'
       );
-
-      await ctx.builders.structure.hierarchy.applyPreset(trajectory, 'default');
+      await plugin.builders.structure.hierarchy.applyPreset(
+        trajectory,
+        'default'
+      );
     }
 
-    init();
+    init().catch((err) => {
+      // Don’t let unhandled promises spam the console
+      console.error('[Mol*] init failed', err);
+    });
 
     return () => {
       disposed = true;
       try {
-        ctx?.dispose?.();
+        pluginRef.current?.dispose();
       } catch {}
-      try {
-        reactRootRef.current?.unmount();
-      } catch {}
+      pluginRef.current = null;
     };
   }, [pdbId]);
 
   return (
     <div
       ref={hostRef}
-      className="relative h-[360px] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white sm:h-[440px]"
+      className="relative h-[360px] w-full overflow-hidden bg-white sm:h-[440px]"
     />
   );
 }
