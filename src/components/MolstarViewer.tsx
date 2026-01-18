@@ -1,90 +1,89 @@
 'use client';
 
-import { PluginUIContext } from 'molstar/lib/mol-plugin-ui/context';
-import { useEffect, useRef } from 'react';
+import Script from 'next/script';
+import { useEffect, useRef, useState } from 'react';
+
+type MolstarWindow = {
+  Viewer?: {
+    create: (
+      target: HTMLElement,
+      options?: Record<string, unknown>
+    ) => Promise<{
+      loadPdb: (id: string) => Promise<void>;
+      dispose?: () => void;
+    }>;
+  };
+};
 
 export default function MolstarViewer({ pdbId }: { pdbId: string }) {
   const hostRef = useRef<HTMLDivElement | null>(null);
-  const pluginRef = useRef<PluginUIContext | null>(null);
+  const viewerRef = useRef<null | { dispose?: () => void }>(null);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
+    if (!ready) return;
     let disposed = false;
 
     async function init() {
       if (!hostRef.current) return;
 
-      pluginRef.current?.dispose();
-      pluginRef.current = null;
+      // cleanup old
+      try {
+        viewerRef.current?.dispose?.();
+      } catch {}
+      viewerRef.current = null;
 
-      const { createPluginUI } = await import('molstar/lib/mol-plugin-ui');
-      const { DefaultPluginUISpec } = await import(
-        'molstar/lib/mol-plugin-ui/spec'
-      );
-      const { renderReact18 } = await import(
-        'molstar/lib/mol-plugin-ui/react18'
-      );
-      const { PluginConfig } = await import('molstar/lib/mol-plugin/config');
+      const molstar = (window as any).molstar as MolstarWindow | undefined;
+      const Viewer = molstar?.Viewer;
 
-      if (disposed || !hostRef.current) return;
+      if (!Viewer?.create) {
+        throw new Error('Mol* Viewer not available on window.molstar');
+      }
 
       hostRef.current.innerHTML = '';
 
-      const spec = DefaultPluginUISpec();
-
-      const plugin = await createPluginUI({
-        target: hostRef.current,
-        spec,
-        render: renderReact18,
-        onBeforeUIRender: (p) => {
-          p.config.set(PluginConfig.Viewport.ShowExpand, false);
-          p.config.set(PluginConfig.Viewport.ShowSelectionMode, false);
-          p.config.set(PluginConfig.Viewport.ShowAnimation, false);
-        },
+      const viewer = await Viewer.create(hostRef.current, {
+        layoutIsExpanded: false,
+        layoutShowControls: false,
+        layoutShowRemoteState: false,
+        layoutShowSequence: true,
+        layoutShowLog: false,
+        layoutShowLeftPanel: false,
+        viewportShowExpand: false,
+        viewportShowSelectionMode: false,
+        viewportShowAnimation: false,
+        pdbProvider: 'rcsb',
+        emdbProvider: 'rcsb',
       });
 
       if (disposed) {
-        plugin.dispose();
+        viewer.dispose?.();
         return;
       }
 
-      pluginRef.current = plugin;
-
-      // Load structure
-      const url = `https://files.rcsb.org/download/${pdbId}.cif`;
-
-      const data = await plugin.builders.data.download(
-        { url, isBinary: false },
-        { state: { isGhost: true } }
-      );
-
-      const trajectory = await plugin.builders.structure.parseTrajectory(
-        data,
-        'mmcif'
-      );
-      await plugin.builders.structure.hierarchy.applyPreset(
-        trajectory,
-        'default'
-      );
+      viewerRef.current = viewer;
+      await viewer.loadPdb(pdbId);
     }
 
-    init().catch((err) => {
-      // Don’t let unhandled promises spam the console
-      console.error('[Mol*] init failed', err);
-    });
+    init().catch((err) => console.error('[Mol*] init failed', err));
 
     return () => {
       disposed = true;
       try {
-        pluginRef.current?.dispose();
+        viewerRef.current?.dispose?.();
       } catch {}
-      pluginRef.current = null;
+      viewerRef.current = null;
     };
-  }, [pdbId]);
+  }, [pdbId, ready]);
 
   return (
-    <div
-      ref={hostRef}
-      className="relative h-[360px] w-full overflow-hidden bg-white sm:h-[440px]"
-    />
+    <div className="relative h-[360px] w-full overflow-hidden bg-white sm:h-[440px]">
+      <Script
+        src="/molstar/molstar.js"
+        strategy="afterInteractive"
+        onLoad={() => setReady(true)}
+      />
+      <div ref={hostRef} className="absolute inset-0" />
+    </div>
   );
 }
