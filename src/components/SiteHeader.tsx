@@ -23,7 +23,7 @@ export default function SiteHeader() {
           <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-cyan-500 text-white">
             L
           </span>
-          <span className="text-base sm:text-lg">
+          <span className="text-base hidden sm:block sm:text-lg">
             Latent Labs Protein Gallery
           </span>
         </Link>
