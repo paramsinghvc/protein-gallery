@@ -1,121 +1,163 @@
 # Project Metadata Fields
 
-This document describes the metadata fields used in the project markdown files
-located in the `projects/` directory.
+This document defines the metadata fields used by the project content files in
+the `projects/` directory and the corresponding TypeScript types consumed by
+the application.
 
-## File Structure
+---
 
-Each project file contains YAML frontmatter with structured metadata, followed
-by markdown content describing the project.
+## File structure
+
+project.json file contains:
+1. JSON object with structured metadata.
+2. **Markdown body** describing the project (long-form content).
+
+Example:
 
 ```yaml
 ---
 {
   "id": "project-id",
-  "category": "Category Name",
-  ...
+  "title": "Project Title",
+  "category": "Peptide",
+  "partner": "University of Washington",
+  "imageUrl": "images/project-id.png",
+  "publishedDate": "2025-09-29",
+  "featured": true,
+  "tags": ["peptide design", "drug discovery"],
+  "target": { "name": "EphA2", "pdb": "2X10" },
+  "proteins": [{ "name": "ZETA_1", "pdb": "3PBJ" }],
+  "metrics": { "Binding affinity": "25 nM", "Success rate": "91%" },
+  "links": [{ "label": "Paper", "href": "https://example.com" }]
 }
 ---
 
-# Project Title
-...
+## Summary
+
+One-paragraph summary shown in cards.
+
+## Detailed Description
+
+Longer project write-up for the detail page.
 ```
 
-## Metadata Fields
+## Field reference
 
-### Core Identifiers
+### Core identifiers
 
-#### `id` (string)
-Unique identifier for the project. Uses kebab-case format.
-- Example: `"zeta-2024"`, `"pH-binder-2025"`
+#### `id` (string) — **required**
+Unique identifier for the project. Used for routing and file naming.
 
-#### `category` (string)
+- **Format:** kebab-case
+- **Used by:** routes (`/projects/{id}`), image default pathing, keys
+- **Example:** `"zeta-2024"`, `"ph-binder-tnfr2-2025"`
+
+---
+
+### Display fields
+
+#### `title` (string) — **required**
+Human-readable project title.
+
+- **Used by:** cards and project detail header
+- **Example:** `"pH-Activated Peptide Binders for TNFR2"`
+
+#### `category` (string) — **required**
 Classification of the computational design project.
-- Values: `"Enzyme"`, `"Peptide"`, `"Biosensor"`
 
-### Project Details
+- **Allowed values:** `"Enzyme"`, `"Peptide"`, `"Biosensor"`
+- **Used by:** filtering, badge display
+- **Example:** `"Peptide"`
 
-#### `partner` (string)
+#### `partner` (string) — **required**
 Research institution or organization collaborating on the project.
-- Example: `"University of Washington"`, `"Stanford University"`
 
-#### `imageUrl` (string)
-Relative path to the project's representative image.
-- Format: `"images/{project-id}.png"`
-- Example: `"images/zeta-2024.png"`
+- **Used by:** cards, project header, filters (optional)
+- **Example:** `"Stanford University"`
 
-#### `publishedDate` (string)
-Publication or completion date of the project.
-- Format: `"YYYY"` or `"YYYY-MM-DD"`
-- Example: `"2024"`, `"2025-09-29"`
+#### `imageUrl` (string) — **required**
+Relative path to the project's representative image (served from `/public`).
 
-#### `tags` (array of strings)
+- **Format:** `"images/{project-id}.png"` (or `.jpg`, `.webp`)
+- **Used by:** cards and hero image
+- **Example:** `"images/zeta-2024.png"`
+
+#### `publishedDate` (string) — **required**
+Publication or completion date.
+
+- **Formats:** `"YYYY"` or `"YYYY-MM-DD"`
+- **Used by:** sorting (newest/oldest), display
+- **Example:** `"2024"`, `"2025-09-29"`
+
+#### `featured` (boolean) — optional
+Marks a project as curated/featured.
+
+- **Used by:** `/showcase` route (featured-only)
+- **Example:** `true`
+
+#### `tags` (string[]) — **required**
 Keywords and categories associated with the project.
-- Common tags: `"enzyme design"`, `"peptide design"`, `"drug discovery"`,
-               `"GPCR"`, `"antiviral"`, `"biosensor"`
-- Example: `["peptide design", "drug discovery"]`
 
-### Structural Data
+- **Used by:** search, tag display, tag filtering (optional)
+- **Examples:**  
+  `["peptide design", "drug discovery"]`  
+  `["GPCR", "antiviral"]`
 
-#### `target` (object)
-Target molecule or protein that the designed proteins bind to or interact with.
+---
 
-The target object contains:
-- `name` (string): Name of the target molecule/protein
-- `pdb` (string or null): PDB (Protein Data Bank) identifier
-  - Use `null` for small molecules or unavailable structures
+### Structural data
+
+#### `target` (object) — **required**
+Target molecule/protein that the designed proteins bind to or interact with.
+
+Fields:
+- `name` (string) — required  
+- `pdb` (string | null) — optional/nullable
+
+Guidelines:
+- Use `null` when a PDB structure is unavailable or not applicable (e.g., small molecules).
+- For PDB entries, use the 4-character RCSB ID.
 
 Example:
+
 ```json
-"target": {
-  "name": "EphA2",
-  "pdb": "2X10"
-}
+"target": { "name": "EphA2", "pdb": "2X10" }
 ```
 
-#### `proteins` (array of objects)
-List of designed proteins or related proteins in the study.
+#### `proteins` (array) — **required**
+List of designed proteins (or relevant proteins) referenced by the project.
 
-Each protein object contains:
-- `name` (string): Name or identifier of the protein
-- `pdb` (string or null): PDB identifier for the protein structure
-  - Use `null` for unavailable structures
+Each entry contains:
+- `name` (string) — required
+- `pdb` (string | null) — nullable
 
 Example:
+
 ```json
 "proteins": [
-  {
-    "name": "ZETA_1",
-    "pdb": "3PBJ"
-  },
-  {
-    "name": "K-Ras",
-    "pdb": "8T71"
-  }
+  { "name": "ZETA_1", "pdb": "3PBJ" },
+  { "name": "K-Ras", "pdb": "8T71" }
 ]
 ```
 
-### Performance Metrics
+---
 
-#### `metrics` (object)
-Quantitative performance measurements for the designed proteins.
+### Performance / evaluation
 
-Standard fields:
-- `Binding affinity` (string): Measured binding affinity of the designed
-  proteins/peptides
-  - Format: Numerical value followed by unit (nM, pM)
-  - Example: `"41 nM"`, `"100 pM"`
+#### `metrics` (object) — **required**
+Quantitative measurements or key performance indicators.
 
-- `Success rate` (string): Percentage of successful designs
-  - Format: `"{percentage}%"`
-  - Example: `"91%"`, `"40%"`
+- Keys are **free-form strings** (e.g., `"Binding affinity"`, `"RMSD"`).
+- Values are strings intended for human display.
+- The UI may surface these values in the MetaPanel.
 
-- `RMSD` (string): Root Mean Square Deviation in Ångströms
-  - Format: `"{min}-{max} Å"`
-  - Measures structural similarity between designed and predicted structures
-  - Example: `"2.2-4.3 Å"`, `"1.1-1.9 Å"`
+Suggested common fields:
+- `Binding affinity` (string): `"41 nM"`, `"100 pM"`
+- `Success rate` (string): `"91%"`
+- `RMSD` (string): `"2.2-4.3 Å"` or `"1.1-1.9 Å"`
 
 Example:
+
 ```json
 "metrics": {
   "Binding affinity": "25 nM",
@@ -124,11 +166,104 @@ Example:
 }
 ```
 
-## Notes
+---
 
-- PDB identifier WXYZ can be found at https://www.rcsb.org/structure/WXYZ and
-  its `mmCIF` file at https://files.rcsb.org/download/WXYZ.cif
-- Use `null` for PDB fields when structures are not available (small molecules,
-  unavailable structures)
-- In reality we would likely not find the designed proteins in PDB, as these
-  would be completely novel, these are just for mocking projects.
+### Links
+
+#### `links` (array) — optional
+External references for the project (paper, dataset, code, blog post).
+
+Each link contains:
+- `label` (string): Display label, e.g. `"Paper"`, `"Dataset"`
+- `href` (string): Absolute URL
+
+Example:
+
+```json
+"links": [
+  { "label": "Paper", "href": "https://example.org/paper" },
+  { "label": "Dataset", "href": "https://example.org/data" }
+]
+```
+
+---
+
+### Description content
+
+#### `description` (string) — **required**
+Markdown string used on the detail page (and optionally as a summary/snippet).
+
+Authoring guidance:
+- Start with a short summary paragraph (first paragraph is ideal for cards/snippets).
+- Use headings like `## Detailed Description`, `## Methods`, `## Results` for structure.
+- Avoid HTML unless you explicitly support it in the markdown renderer.
+
+> If you store the markdown body **outside** frontmatter (recommended),
+> `description` may be derived by the loader instead of duplicated in frontmatter.
+> Keep the approach consistent across all project files.
+
+---
+
+## Notes and conventions
+
+### PDB identifiers
+- RCSB structure page: `https://www.rcsb.org/structure/WXYZ`
+- mmCIF download: `https://files.rcsb.org/download/WXYZ.cif`
+
+Use `null` for PDB fields when structures are not available (e.g., small molecules,
+unpublished designs, or mock projects).
+
+### Recommended controlled vocabularies
+To keep filtering clean, consider restricting:
+- `category` to the allowed enum values.
+- `tags` to a curated set (lowercase, short phrases).
+
+---
+
+## TypeScript types (source of truth)
+
+These reflect the expected in-app data shape:
+
+```ts
+export type ProjectCategory = 'Enzyme' | 'Peptide' | 'Biosensor';
+
+export type ProjectTarget = {
+  name: string;
+  pdb: string | null;
+};
+
+export type ProjectProtein = {
+  name: string;
+  pdb: string | null;
+};
+
+export type ProjectMetrics = Partial<{
+  'Binding affinity': string;
+  'Success rate': string;
+  RMSD: string;
+}> &
+  Record<string, string>;
+
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  category: ProjectCategory;
+  partner: string;
+  imageUrl: string;
+  /** "YYYY" or "YYYY-MM-DD" */
+  publishedDate: string;
+  featured?: boolean;
+  tags: string[];
+  target: ProjectTarget;
+  proteins: ProjectProtein[];
+  metrics: ProjectMetrics;
+  /** Markdown string used on the detail page */
+  description: string;
+  links?: ProjectLink[];
+};
+```
