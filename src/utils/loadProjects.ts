@@ -1,20 +1,9 @@
 import type { Project } from '@/types/project';
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
 export async function loadProjects(): Promise<Project[]> {
-  const base =
-    process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3000'
-      : process.env.NEXT_PUBLIC_SITE_URL ||
-        (process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`);
-
-  const res = await fetch(`${base}/data/projects.json`, {
-    cache: 'force-cache',
-  });
-
-  if (!res.ok) {
-    throw new Error('Failed to load projects');
-  }
-
-  // Ensures we actually return Project[]
-  return (await res.json()) as Project[];
+  const file = path.join(process.cwd(), 'public/data/projects.json');
+  const raw = await fs.readFile(file, 'utf8');
+  return JSON.parse(raw) as Project[];
 }
